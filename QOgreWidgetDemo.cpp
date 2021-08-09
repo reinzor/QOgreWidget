@@ -116,15 +116,8 @@ void QOgreWidgetDemo::ogreMousePressEvent(QMouseEvent *event) {
 
 
 void QOgreWidgetDemo::ogreMouseMoveEvent(QMouseEvent *event) {
-    if (event->buttons() & Qt::LeftButton) {
-        std::cout << "mouse Moved (left button pressed)";
-    } else if (event->buttons() & Qt::RightButton) {
-        std::cout << "mouse Moved (right button pressed)";
-    }
     int x = event->x();
     int y = event->y();
-    int dx = mMouseMoveXOld - x;
-    int dy = mMouseMoveYOld - y;
     
     mMouseMoveXOld = x;
     mMouseMoveYOld = y;

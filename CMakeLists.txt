@@ -26,7 +26,7 @@ if(UNIX)
         boost_system
         boost_thread
     )
-    set(OGRE_PLUGIN_FOLDER /usr/lib/OGRE/)
+    set(OGRE_PLUGIN_FOLDER /lib/x86_64-linux-gnu/OGRE-1.9.0/)
 elseif(WIN32)
     include_directories(
         "${OGRE_HOME}\\include"
